@@ -16,24 +16,16 @@
                 </ol>
             </div><!-- /.col -->
 
-            <table class="table col-sm-8">
-                <thead>
-                    <tr class="table-warning">
-                    <td>ID</td>
-                    <td>Nama</td>
-                    <td>Perusahaan</td>
-                    <td>Point</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>1</td>
-                    <td><a href="detail">Rio Rivaldo</a></td>
-                    <td>BUMA</td>
-                    <td>80</td>
-                    </tr>
-                </tbody>
-            </table>
+            <img src="{{ asset('vendors/dist/img/user1-128x128.jpg') }}" alt="" width="150" class="mr-3">
+            
+            <div>
+                <h5>Beats ID: ZXKAR</h5>
+                <h5>Perusahaan: BUMA</h5>
+                <h5>Jabatan Struktural: </h5>
+                <h5>Jabatan Fungsional: </h5>
+                <h5>Site: LMO</h5>
+            </div>
+            
         
         </div><!-- /.row -->
         <a href="/" class="btn btn-primary btn-sm">Kembali</a>
