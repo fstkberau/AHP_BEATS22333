@@ -25,18 +25,14 @@
             </tr>
         </thead>
         <tbody>
+          @foreach($leaderboard as $item)
           <tr>
-            <td>1</td>
-            <td><a href="detail">Rio Rivaldo</a></td>
-            <td>BUMA</td>
-            <td>80</td>
+            <td>{{$item->id}}</td>
+            <td><a href="detail">{{$item->nama}}</a></td>
+            <td>{{$item->perusahaan}}</td>
+            <td>{{$item->poin}}</td>
           </tr>
-          <tr>
-            <td>2</td>
-            <td>Adhe Ias</td>
-            <td>PAMA</td>
-            <td>75</td>
-        </tr>
+          @endforeach
         </tbody>
       </table>
       

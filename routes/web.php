@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LeaderboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('leaderboard');
-});
+// Route::get('/', function () {
+//     return view('leaderboard');
+// }); 
 
 Route::get('detail', function () {
     return view('detail');
 });
+
+//Route::get('/leaderboard','leaderboardcontroller@index')-> name ('leaderboard');
+
+Route::resource('/', LeaderboardController::class);
