@@ -23,6 +23,7 @@
               <td>Nama</td>
               <td>Perusahaan</td>
               <td>Point</td>
+              <td>Tanggal</td>
             </tr>
         </thead>
         <tbody>
@@ -31,12 +32,14 @@
             <td><a href="{{ url('detail') }}">Rio Rivaldo</a></td>
             <td>BUMA</td>
             <td>80</td>
+            <td>18-10-2021</td>
           </tr>
           <tr>
             <td>2</td>
             <td><a href="#"> Adhe Ias</a></td>
             <td>PAMA</td>
             <td>75</td>
+            <td>18-10-2021</td>
         </tr>
         </tbody>
       </table>

@@ -20,6 +20,7 @@
             
             <div>
                 <h5>Beats ID: ZXKAR</h5>
+                <h5>Nama: Rio Rivaldo</h5>
                 <h5>Perusahaan: BUMA</h5>
                 <h5>Jabatan Struktural: Administrator</h5>
                 <h5>Jabatan Fungsional: Manager</h5>
@@ -32,7 +33,7 @@
         <section class="content">
             <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                 <!-- Line chart -->
                 <div class="card card-success card-outline">
                     <div class="card-header">
@@ -79,7 +80,7 @@
                 </div>
                 <!-- /.col -->
     
-                <div class="col-md-6">
+                <div class="col-md-12">
                 <!-- Bar chart -->
                 <div class="card card-success card-outline">
                     <div class="card-header">
