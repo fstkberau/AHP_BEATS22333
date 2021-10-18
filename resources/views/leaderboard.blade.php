@@ -11,6 +11,7 @@
 
       <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
           <li class="breadcrumb-item active">Leaderboards</li>
         </ol>
       </div><!-- /.col -->
@@ -27,13 +28,13 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td><a href="detail">Rio Rivaldo</a></td>
+            <td><a href="{{ url('detail') }}">Rio Rivaldo</a></td>
             <td>BUMA</td>
             <td>80</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Adhe Ias</td>
+            <td><a href="#"> Adhe Ias</a></td>
             <td>PAMA</td>
             <td>75</td>
         </tr>

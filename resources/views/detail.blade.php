@@ -11,23 +11,107 @@
 
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="/">Leaderboards</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('dashboard/leaderboard') }}">Leaderboards</a></li>
                 <li class="breadcrumb-item active">Detail</li>
                 </ol>
             </div><!-- /.col -->
 
-            <img src="{{ asset('vendors/dist/img/user1-128x128.jpg') }}" alt="" width="150" class="mr-3">
+            <img src="{{ asset('vendors/dist/img/user1-128x128.jpg') }}" alt="" width="150" class="ml-2 mr-3">
             
             <div>
                 <h5>Beats ID: ZXKAR</h5>
                 <h5>Perusahaan: BUMA</h5>
-                <h5>Jabatan Struktural: </h5>
-                <h5>Jabatan Fungsional: </h5>
+                <h5>Jabatan Struktural: Administrator</h5>
+                <h5>Jabatan Fungsional: Manager</h5>
                 <h5>Site: LMO</h5>
             </div>
-            
-        
+
         </div><!-- /.row -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                <!-- Line chart -->
+                <div class="card card-success card-outline">
+                    <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="far fa-chart-bar"></i>
+                        Grafik Pelanggaran
+                    </h3>
+    
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="line-chart" style="height: 170px;"></div>
+                    </div>
+                    <!-- /.card-body-->
+                </div>
+                <!-- /.card -->
+    
+                <!-- Area chart -->
+                <div class="card card-success card-outline">
+                    <div class="card-header">
+                    <h3 class="card-title">
+                        Hazard
+                    </h3>
+    
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Merokok</li>
+                            <li>Tidur</li>
+                        </ul>
+                    </div>
+                    <!-- /.card-body-->
+                </div>
+                <!-- /.card -->
+                </div>
+                <!-- /.col -->
+    
+                <div class="col-md-6">
+                <!-- Bar chart -->
+                <div class="card card-success card-outline">
+                    <div class="card-header">
+                    <h3 class="card-title">
+                        Coaching
+                    </h3>
+    
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                    </div>
+                    <div class="card-body">
+                        <h6>Topik :</h6>
+                        <h6>Nama Coaching :</h6>
+                        <h6>Nama Peserta :</h6>
+                        <h6>Tanggal Pelaksanaan :</h6>
+                        <h6>Nilai :</h6>
+                        <h6>Kondisi :</h6>
+                    </div>
+                    <!-- /.card-body-->
+                </div>
+                <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+        
         <a href="/" class="btn btn-primary btn-sm">Kembali</a>
   </div><!-- /.container-fluid -->
 </div>
