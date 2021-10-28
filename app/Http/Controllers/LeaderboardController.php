@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Leaderboard;
 use Illuminate\Http\Request;
+use App\Models\TabelLead;
 
 class LeaderboardController extends Controller
 {
@@ -14,9 +15,9 @@ class LeaderboardController extends Controller
      */
     public function index()
     {
-        $leaderboard = Leaderboard::all();
-        // dd($leaderboard);
-        return view('leaderboard', compact('leaderboard'));
+        $data = TabelLead::all();
+         //dd($data);
+        return view('leaderboard', compact('data'));
     }
 
     /**

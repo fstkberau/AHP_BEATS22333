@@ -109,6 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     var sin = [],
         cos = []
     for (var i = 1; i < 31; i += 1) {
+      
       sin.push([i, Math.sin(i)])
       cos.push([i, Math.cos(i)])
     }

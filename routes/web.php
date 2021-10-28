@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LeaderboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,10 +22,13 @@ Route::get('dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('dashboard/leaderboard', function () {
-    return view('leaderboard');
-});
+// Route::get('dashboard/leaderboard', function () {
+//     return view('leaderboard');
+// });
 
-Route::get('detail', function () {
+Route::get('dashboard/detail', function () {
     return view('detail');
 });
+
+// Route::get('leaderboard', 'App\Http\Controllers\LeaderboardController@index');
+Route::get('dashboard/leaderboard',[LeaderboardController::class, 'index']);

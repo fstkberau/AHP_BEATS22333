@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Leaderboard extends Model
 {
-    protected $table='leaderboard';
+    // protected $table='leaderboard';
+    protected $table='dms_data';
 }

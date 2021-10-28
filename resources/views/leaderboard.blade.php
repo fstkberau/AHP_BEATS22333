@@ -45,10 +45,20 @@
               <th>Point</th>
               <th>Tanggal</th>
             </tr>
-            </thead>
+            @foreach($data as $item)
+            <tr>  
+              <td>{{$item['kode_sid']}} </td>
+              <td><a href="detail">{{$item['nama']}}</a> </td>
+              <td>{{$item['nama_perusahaan']}} </td>
+              <td>{{$item['id_status']}} </td>
+              <td>{{$item['tanggal_hari_pertama']}} </td>
+            </tr> 
+            @endforeach
+
+            <!-- </thead>
             <tbody>
-            <tr>
-              <td>1</td>
+            <tr> -->
+              <!-- <td>1</td>
               <td><a href="{{ url('detail') }}">Rio Rivaldo</a></td>
               <td>BUMA</td>
               <td>7</td>
@@ -140,7 +150,7 @@
               <th>Point</th>
               <th>Tanggal</th>
             </tr>
-            </tfoot>
+            </tfoot> -->
           </table>
         </div>
         <!-- /.card-body -->
