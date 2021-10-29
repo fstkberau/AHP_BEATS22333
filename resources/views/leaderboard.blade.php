@@ -45,10 +45,11 @@
               <th>Point</th>
               <th>Tanggal</th>
             </tr>
+            </thead>
             @foreach($data as $item)
             <tr>  
               <td>{{$item['kode_sid']}} </td>
-              <td><a href="detail">{{$item['nama']}}</a> </td>
+              <td><a href="detail/{{$item['id']}}">{{$item['nama']}}</a> </td>
               <td>{{$item['nama_perusahaan']}} </td>
               <td>{{$item['id_status']}} </td>
               <td>{{$item['tanggal_hari_pertama']}} </td>
@@ -57,13 +58,7 @@
 
             <!-- </thead>
             <tbody>
-            <tr> -->
-              <!-- <td>1</td>
-              <td><a href="{{ url('detail') }}">Rio Rivaldo</a></td>
-              <td>BUMA</td>
-              <td>7</td>
-              <td>20-10-2021</td>
-            </tr>
+            
             <tr>
               <td>2</td>
               <td>Adhe Ias</td>
@@ -127,21 +122,7 @@
               <td>8</td>
               <td>20-10-2021</td>
             </tr>
-            <tr>
-              <td>3</td>
-              <td>Yosa Wulandari</td>
-              <td>PAMA</td>
-              <td>9</td>
-              <td>20-10-2021</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Adhe Ias</td>
-              <td>PAMA</td>
-              <td>8</td>
-              <td>20-10-2021</td>
-            </tr>
-            </tbody>
+            </tbody> -->
             <tfoot>
             <tr>
               <th>ID</th>
@@ -150,7 +131,7 @@
               <th>Point</th>
               <th>Tanggal</th>
             </tr>
-            </tfoot> -->
+            </tfoot> 
           </table>
         </div>
         <!-- /.card-body -->

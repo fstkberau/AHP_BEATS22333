@@ -19,11 +19,11 @@
             <img src="{{ asset('vendors/dist/img/user1-128x128.jpg') }}" alt="" width="150" class="ml-2 mr-3">
             
             <div>
-                <h5>Beats ID: ZXKAR</h5>
-                <h5>Nama: Rio Rivaldo</h5>
-                <h5>Perusahaan: BUMA</h5>
-                <h5>Jabatan Struktural: Administrator</h5>
-                <h5>Jabatan Fungsional: Manager</h5>
+                <h5>Beats ID: {{$data_bio['kode_sid']}}</h5>
+                <h5>Nama: {{$data_bio['nama']}}</h5>
+                <h5>Perusahaan: {{$data_bio['nama_perusahaan']}}</h5>
+                <h5>Jabatan Struktural: {{$data_bio['jabatan_struktural']}}</h5>
+                <h5>Jabatan Fungsional: {{$data_bio['jabatan_fungsional']}}</h5>
                 <h5>Site: LMO</h5>
             </div>
 
@@ -113,7 +113,7 @@
         </section>
         <!-- /.content -->
         
-        <a href="/" class="btn btn-primary btn-sm">Kembali</a>
+        <a href="/dashboard/leaderboard" class="btn btn-primary btn-sm">Kembali</a>
   </div><!-- /.container-fluid -->
 </div>
 <!-- /.content-header -->

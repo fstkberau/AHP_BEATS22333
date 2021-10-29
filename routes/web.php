@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LeaderboardController;
+use App\Http\Controllers\BiodetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,5 @@ Route::get('dashboard/detail', function () {
 
 // Route::get('leaderboard', 'App\Http\Controllers\LeaderboardController@index');
 Route::get('dashboard/leaderboard',[LeaderboardController::class, 'index']);
+
+Route::get('dashboard/detail/{id}',[BiodetailController::class, 'show']);
