@@ -70,8 +70,7 @@
                     </div>
                     <div class="card-body">
                         <ul>
-                            <li>Merokok</li>
-                            <li>Tidur</li>
+                        <h6>{{$data_bio['warning_type']}}</h6>
                         </ul>
                     </div>
                     <!-- /.card-body-->
@@ -97,9 +96,9 @@
                     <div class="card-body">
                         <h6>Topik :</h6>
                         <h6>Nama Coaching :</h6>
-                        <h6>Nama Peserta :</h6>
-                        <h6>Tanggal Pelaksanaan :</h6>
-                        <h6>Nilai :</h6>
+                        <h6>Nama Peserta : {{$data_bio['nama']}}</h6>
+                        <h6>Tanggal Pelaksanaan : {{$data_bio['time']}}</h6>
+                        <h6>Nilai :{{$data_bio['altitude']}}</h6>
                         <h6>Kondisi :</h6>
                     </div>
                     <!-- /.card-body-->

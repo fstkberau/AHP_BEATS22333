@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Leaderboard;
 use Illuminate\Http\Request;
 use App\Models\TabelLead;
+use DB;
 
 class LeaderboardController extends Controller
 {
@@ -16,7 +17,8 @@ class LeaderboardController extends Controller
     public function index()
     {
         $data = TabelLead::all();
-         //dd($data);
+        //$data = DB::select(DB::raw('SELECT id, kode_driver, nama_driver AS nama, nama_perusahaan, avg(altitude) AS altitude, MAX(time) as time FROM dbgabung group by kode_driver, nama_driver, nama_perusahaan, ID'));
+        //  dd($data);
         return view('leaderboard', compact('data'));
     }
 

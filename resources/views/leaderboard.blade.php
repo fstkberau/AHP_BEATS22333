@@ -46,16 +46,17 @@
               <th>Tanggal</th>
             </tr>
             </thead>
+            
             @foreach($data as $item)
             <tr>  
-              <td>{{$item['kode_sid']}} </td>
+              <td>{{$item['kode_driver']}} </td>
               <td><a href="detail/{{$item['id']}}">{{$item['nama']}}</a> </td>
               <td>{{$item['nama_perusahaan']}} </td>
-              <td>{{$item['id_status']}} </td>
-              <td>{{$item['tanggal_hari_pertama']}} </td>
+              <td>{{$item['altitude']}} </td>
+              <td>{{$item['time']}} </td>
             </tr> 
             @endforeach
-
+            
             <!-- </thead>
             <tbody>
             
