@@ -34,4 +34,5 @@ Route::get('dashboard/detail', function () {
 // Route::get('leaderboard', 'App\Http\Controllers\LeaderboardController@index');
 Route::get('dashboard/leaderboard',[LeaderboardController::class, 'index']);
 
-Route::get('dashboard/detail/{id}',[BiodetailController::class, 'show']);
+Route::get('dashboard/detail/{kode_sid}',[BiodetailController::class, 'show']);
+// Route::get('dashboard/detail/{coaching}',[CoachingController::class, 'show']);

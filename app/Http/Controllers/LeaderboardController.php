@@ -16,9 +16,9 @@ class LeaderboardController extends Controller
      */
     public function index()
     {
-        $data = TabelLead::all();
-        //$data = DB::select(DB::raw('SELECT id, kode_driver, nama_driver AS nama, nama_perusahaan, avg(altitude) AS altitude, MAX(time) as time FROM dbgabung group by kode_driver, nama_driver, nama_perusahaan, ID'));
-        //  dd($data);
+    $data = TabelLead::all();
+    //$data = DB::select(DB::raw('SELECT id, kode_driver, nama_driver AS nama, nama_perusahaan, avg(altitude) AS altitude, MAX(time) as time FROM dbgabung group by kode_driver, nama_driver, nama_perusahaan, ID'));
+    //dd($data);
         return view('leaderboard', compact('data'));
     }
 

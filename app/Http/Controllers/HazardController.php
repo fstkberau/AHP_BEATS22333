@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TabelLead;
-use App\Models\Coaching;
+use App\Models\hazard;
 use Illuminate\Http\Request;
 
-class BiodetailController extends Controller
+class HazardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class BiodetailController extends Controller
      */
     public function index()
     {
-        
+        //
     }
 
     /**
@@ -42,28 +41,21 @@ class BiodetailController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\TabelLead  $tabelLead
+     * @param  \App\Models\hazard  $hazard
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(hazard $hazard)
     {
-        $data_bio=TabelLead::where('kode_driver',$id)
-                // ->take(1)   
-                ->first();
-        //$data_bio=TabelLead::find($id);
-        $coaching = Coaching::where('NPK_Coachee', $id)->first();
-        //$coaching = Coaching::all();
-        // dd($coaching);
-        return view('detail',compact('data_bio', 'coaching'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\TabelLead  $tabelLead
+     * @param  \App\Models\hazard  $hazard
      * @return \Illuminate\Http\Response
      */
-    public function edit(TabelLead $tabelLead)
+    public function edit(hazard $hazard)
     {
         //
     }
@@ -72,10 +64,10 @@ class BiodetailController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\TabelLead  $tabelLead
+     * @param  \App\Models\hazard  $hazard
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, TabelLead $tabelLead)
+    public function update(Request $request, hazard $hazard)
     {
         //
     }
@@ -83,10 +75,10 @@ class BiodetailController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\TabelLead  $tabelLead
+     * @param  \App\Models\hazard  $hazard
      * @return \Illuminate\Http\Response
      */
-    public function destroy(TabelLead $tabelLead)
+    public function destroy(hazard $hazard)
     {
         //
     }

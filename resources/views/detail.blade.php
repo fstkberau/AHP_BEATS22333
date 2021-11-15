@@ -93,13 +93,14 @@
                         </button>
                     </div>
                     </div>
+                   
                     <div class="card-body">
-                        <h6>Topik :</h6>
-                        <h6>Nama Coaching :</h6>
-                        <h6>Nama Peserta : {{$data_bio['nama']}}</h6>
-                        <h6>Tanggal Pelaksanaan : {{$data_bio['time']}}</h6>
-                        <h6>Nilai :{{$data_bio['altitude']}}</h6>
-                        <h6>Kondisi :</h6>
+                        <h6>Topik : {{$coaching['Topik_Coaching']}}</h6>
+                        <h6>Nama Coach : {{$coaching['Nama_Coach']}}</h6>
+                        <h6>Nama Peserta : {{$coaching['Nama_Coachee']}}</h6>
+                        <h6>Tanggal Pelaksanaan : {{$coaching['Tanggal']}}-{{$coaching['Bulan']}}-{{$coaching['Tahun']}}</h6>
+                        <h6>Nilai :{{$coaching['Hasil_Skor']}}</h6>
+                        <h6>Kondisi : {{$coaching['Catatan_Coach']}}</h6>
                     </div>
                     <!-- /.card-body-->
                 </div>

@@ -47,10 +47,12 @@
             </tr>
             </thead>
             
+            
+            
             @foreach($data as $item)
             <tr>  
               <td>{{$item['kode_driver']}} </td>
-              <td><a href="detail/{{$item['id']}}">{{$item['nama']}}</a> </td>
+              <td><a href="detail/{{$item['kode_driver']}}">{{$item['nama']}}</a> </td>
               <td>{{$item['nama_perusahaan']}} </td>
               <td>{{$item['altitude']}} </td>
               <td>{{$item['time']}} </td>
